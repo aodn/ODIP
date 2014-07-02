@@ -10,8 +10,11 @@ Content relates to the ODIP Prototype #3
 "Establishing a prototype for a Sensor observation Service (SOS) for selected sensors (SWE) installed on research vessels and in real-time monitoring systems"
 
 There are three segments for documents and services:
+
 SOS - compile inventory of SOS services and their endpoints
+
 OM_SensorML - compile inventory of instrument SensorML records & O&M structures
+
 VOC - compile inventory of vocab and registry services
 
 with corresponding Wiki pages for group comment and discussion.
