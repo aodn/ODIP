@@ -1,0 +1,4 @@
+documentation on Oceanotron.
+
+version 1.3.2 implements SOS for marine water column observation collection. Instance available at:
+http://www.ifremer.fr/oceanotron/SOS/default?service=SOS&request=getCapabilities
