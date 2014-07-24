@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sml:PhysicalSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0"
+    xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.net/sensorML/2.0/sensorML.xsd"
+    gml:id="top">
+
+
+
+
+    <gml:description>Autonomous Sailing Boat With Embedded Instrumentation For Ocean Surface Measurements</gml:description>
+    <gml:name>VAIMOS</gml:name>
+
+    <sml:identification>
+
+        <sml:IdentifierList>
+            <!-- #### uuid ##### -->
+            <sml:identifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=66">
+                    <sml:label>uuid</sml:label>
+                    <sml:value>c6fad940-5413-4c59-a98d-7ff4855301b4</sml:value>
+                </sml:Term>
+            </sml:identifier>
+
+        
+
+        </sml:IdentifierList>
+    </sml:identification>
+
+
+    <sml:classification>
+        <sml:ClassifierList>
+            <!-- #### PLATFORM_FAMILY ############### -->
+            <sml:classifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=51">
+                    <sml:label>family</sml:label>
+                    <sml:codeSpace xlink:href="http://vocab.nerc.ac.uk/collection/L06/current/"/>
+                    <sml:value>autonomous surface water vehicle</sml:value>
+                </sml:Term>
+            </sml:classifier>
+        </sml:ClassifierList>
+    </sml:classification>
+    <!-- Periode pendant laquelle la description la description courante est applicable -->
+    <sml:validTime>
+        <gml:TimePeriod gml:id="validTime">
+            <gml:beginPosition>2013-06-12T00:00:00.0</gml:beginPosition>
+            <gml:endPosition>2015-06-12T00:00:00.0</gml:endPosition>
+
+        </gml:TimePeriod>
+    </sml:validTime>
+    <sml:contacts>
+        <sml:ContactList>
+            <sml:contact>
+                <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName><gco:CharacterString>IFREMER</gco:CharacterString></gmd:organisationName>
+                    <gmd:role><gmd:CI_RoleCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=67" codeListValue="principal investigator"></gmd:CI_RoleCode></gmd:role>
+                </gmd:CI_ResponsibleParty>               
+            </sml:contact>
+            <sml:contact>
+                <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName><gco:CharacterString>ENSTA Bretagne</gco:CharacterString></gmd:organisationName>
+                    <gmd:role><gmd:CI_RoleCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=67" codeListValue="principal investigator"></gmd:CI_RoleCode></gmd:role>
+                </gmd:CI_ResponsibleParty>               
+            </sml:contact>
+            <sml:contact>
+                <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName><gco:CharacterString>LPO</gco:CharacterString></gmd:organisationName>                   
+                    <gmd:role><gmd:CI_RoleCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=67" codeListValue="principal investigator"></gmd:CI_RoleCode></gmd:role>
+                </gmd:CI_ResponsibleParty>               
+            </sml:contact>
+        </sml:ContactList>        
+    </sml:contacts>
+    
+    <sml:documentation>
+        <sml:DocumentList>
+            <!-- une photo du profileur ce serait sympa ici                                             -->
+            <!-- des documents géré dans des systèmes (librarie) peuvent aussi être référencés,         -->
+            <!-- dans ce cas on utilise des liens href vers ces systèmes                                -->
+            <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://wwz.ifremer.fr/institut/content/download/72647/945553/file/13_09_16_Vaimos.pdf</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name><gco:CharacterString>VAIMOS,un robot voilier autonome</gco:CharacterString></gmd:name>
+                    <gmd:description><gco:CharacterString>Description page on ifremer web site</gco:CharacterString></gmd:description>                                      
+                </gmd:CI_OnlineResource>                
+            </sml:document>
+            <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://www.ifremer.fr/photo/PDG-DCOM/webvideo/VAIMOS/VAIMOS-HD.flv</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name><gco:CharacterString>VAIMOS,un robot voilier autonome</gco:CharacterString></gmd:name>
+                    <gmd:description><gco:CharacterString>video on IFREMER webtv</gco:CharacterString></gmd:description>                                      
+                </gmd:CI_OnlineResource>                
+            </sml:document>
+          <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://wwz.ifremer.fr/var/storage/images/medias-ifremer/medias-institut/ressources-documentaires/medias/communiques/communiques-2013/images-2013/le-robot-voilier-intelligent-vaimos/945016-1-fre-FR/Le-robot-voilier-intelligent-VAIMOS.jpg</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name>
+                        <gco:CharacterString>Le-robot-voilier-intelligent-VAIMOS.jpg</gco:CharacterString>
+                    </gmd:name>
+                    <gmd:description>
+                        <gco:CharacterString>Le-robot-voilier-intelligent-VAIMOS.jpg</gco:CharacterString>
+                    </gmd:description>
+                    <gmd:function><gmd:CI_OnLineFunctionCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=99" codeListValue="quicklook"></gmd:CI_OnLineFunctionCode></gmd:function>
+                </gmd:CI_OnlineResource>
+          </sml:document>
+            <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://wwz.ifremer.fr/var/storage/images/medias-ifremer/medias-webtv/images/vaimos/vaimos2/740039-1-fre-FR/Vaimos2.jpg</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name>
+                        <gco:CharacterString>Vaimos2.jpg</gco:CharacterString>
+                    </gmd:name>
+                    <gmd:description>
+                        <gco:CharacterString>Vaimos2.jpg</gco:CharacterString>
+                    </gmd:description>
+
+                </gmd:CI_OnlineResource>
+            </sml:document>
+        </sml:DocumentList>
+    </sml:documentation>
+
+
+
+    <sml:inputs>
+        <sml:InputList>
+            <sml:input name="Environement">
+                <sml:ObservableProperty
+                    definition="http://sweet.jpl.nasa.gov/2.3/propSpaceLocation.owl#Position"/>
+            </sml:input>
+        </sml:InputList>
+    </sml:inputs>
+
+
+
+    <sml:outputs>
+
+        <sml:OutputList>
+
+            <sml:output name="systemMeasurements">
+                <swe:DataRecord>
+                    <swe:label>Weather Data Record</swe:label>
+                    <swe:description>Record of synchronous weather measurements</swe:description>
+                    <swe:field name="time" >
+                        <swe:Time
+                            definition="http://www.opengis.net/def/property/OGC/0/SamplingTime"
+                            referenceFrame="http://www.opengis.net/def/trs/OGC/0/GPS">
+                            <swe:label>Sampling Time</swe:label>
+                            <swe:uom
+                                xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                        </swe:Time>
+                    </swe:field>
+                    <swe:field name="position">
+                        <swe:Vector 
+                            definition="http://sweet.jpl.nasa.gov/2.0/space.owl#Location"
+                            referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4326">
+
+                            <swe:coordinate name="lat">
+                                <swe:Quantity
+                                    definition="http://sweet.jpl.nasa.gov/2.0/spaceCoordinates.owl#Latitude"
+                                    axisID="Lat">
+                                    <swe:label>Latitude</swe:label>
+                                    <swe:uom xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/DEGN/" code="degree_north"/>
+
+                                </swe:Quantity>
+                            </swe:coordinate>
+                            <swe:coordinate name="lon">
+                                <swe:Quantity
+                                    definition="http://sweet.jpl.nasa.gov/2.0/spaceCoordinates.owl#Longitude"
+                                    axisID="Long">
+                                    <swe:label>Longitude</swe:label>
+                                    <swe:uom xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/DEGE/" code="degree_east"/>
+
+                                </swe:Quantity>
+                            </swe:coordinate>
+
+                        </swe:Vector>
+
+                    </swe:field>
+
+                </swe:DataRecord>
+
+
+            </sml:output>
+        </sml:OutputList>
+    </sml:outputs>
+
+
+    <sml:components>
+        <sml:ComponentList>
+
+
+            <!-- ###############################################################-->
+            <!-- ################### CONTROLLER BOARD description ##############-->
+            <!-- ###############################################################-->
+            <sml:component name="controllerBoard">
+                <sml:PhysicalComponent gml:id="controllerBoard">
+                    <gml:description>The APF27 is a middle/high-end Single Board Computer targeted for low power applications, advanced GUI and extended connectivity</gml:description>
+                    <gml:name>armadeus APF27 </gml:name>
+
+
+                    <sml:documentation
+                        xlink:href="http://www.armadeuscom/francais/produits-cartes_microprocesseur-apf27.html"/>
+
+                </sml:PhysicalComponent>
+            </sml:component>
+
+            <sml:component name="dataCollectionSoftware">
+                <sml:SimpleProcess gml:id="dataCollectionSoftware">
+                    <gml:description>There is an program running in APF27, this program could control all data transmission,containing GPS data.
+                    the connection is realized by th port Ethernet. This program could convert the GPS data to an file .csv. 
+                    This program is writhen by Fabrice le bars, ENSTA Bretagne. 
+                    </gml:description>
+                    <sml:contacts>
+                        <sml:ContactList>
+                            <sml:contact><gmd:CI_ResponsibleParty>
+                                <gmd:contactInfo>
+                                    <gmd:CI_Contact>
+                                        <gmd:address>
+                                            <gmd:CI_Address>
+                                                <gmd:electronicMailAddress><gco:CharacterString>fabrice.le_bars@ensta-bretagne.org</gco:CharacterString></gmd:electronicMailAddress>
+                                            </gmd:CI_Address>
+                                        </gmd:address>
+                                    </gmd:CI_Contact>
+                                </gmd:contactInfo>
+                                <gmd:role></gmd:role>
+                            </gmd:CI_ResponsibleParty>
+                            </sml:contact>
+                        </sml:ContactList>                        
+                    </sml:contacts>                
+                </sml:SimpleProcess>
+            </sml:component>
+
+            <sml:component name="WeatherStation">
+                <sml:PhysicalSystem gml:id="weatherstation">
+                    <sml:documentation
+                        xlink:href="http://www.armadeus.com/francais/produits-cartes_microprocesseur-apf27.html"> </sml:documentation>
+                    <sml:components>
+                        <sml:ComponentList>
+                            <sml:component name="positioningSystem">
+                                <sml:PhysicalComponent gml:id="positioningSystem">
+                                    <sml:identification>
+                                        <sml:IdentifierList>
+                                            <!-- ###### GPS ######## -->
+                                            <sml:identifier>
+                                                <sml:Term>
+                                                  <sml:label>Furuno GP32 GPS</sml:label>
+                                                  <sml:codeSpace
+                                                  xlink:href="http://vocab.nerc.ac.uk/collection/L22/current/"/>
+                                                  <sml:value>TOOL0457</sml:value>
+                                                </sml:Term>
+                                            </sml:identifier>
+
+                                        </sml:IdentifierList>
+
+                                    </sml:identification>
+
+                                </sml:PhysicalComponent>
+                            </sml:component>
+                        </sml:ComponentList>
+                    </sml:components>
+                </sml:PhysicalSystem>
+            </sml:component>
+
+
+        </sml:ComponentList>
+    </sml:components>
+
+</sml:PhysicalSystem>

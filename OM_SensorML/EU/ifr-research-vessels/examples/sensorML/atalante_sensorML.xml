@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sml:PhysicalSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0"
+    xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.net/sensorML/2.0/sensorML.xsd"
+    gml:id="top">
+
+
+
+
+    <gml:description>ATALANTE IFREMER Research Vessel operated by GENAVIR</gml:description>
+    <gml:name>ATALANTE</gml:name>
+
+    <sml:identification>
+
+        <sml:IdentifierList>
+            <!-- #### uuid ##### -->
+            <sml:identifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=66">
+                    <sml:label>uuid</sml:label>
+                    <sml:value>2764d202-6814-4fd4-88fb-816325d817a0</sml:value>
+                </sml:Term>
+            </sml:identifier>
+
+        
+
+        </sml:IdentifierList>
+    </sml:identification>
+
+
+    <sml:classification>
+        <sml:ClassifierList>
+            <!-- #### PLATFORM_FAMILY ############### -->
+            <sml:classifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=51">
+                    <sml:label>family</sml:label>
+                    <sml:codeSpace xlink:href="http://vocab.nerc.ac.uk/collection/L06/current/"/>
+                    <sml:value>research vessel</sml:value>
+                </sml:Term>
+            </sml:classifier>
+        </sml:ClassifierList>
+    </sml:classification>
+    <!-- Periode pendant laquelle la description la description courante est applicable -->
+    <sml:validTime>
+        <gml:TimePeriod gml:id="validTime">
+            <gml:beginPosition>1989</gml:beginPosition>
+            <gml:endPosition>2014</gml:endPosition>
+        </gml:TimePeriod>
+    </sml:validTime>
+    <sml:contacts>
+        <sml:ContactList>
+            <sml:contact>
+                <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName><gco:CharacterString>IFREMER</gco:CharacterString></gmd:organisationName>
+                    <gmd:role><gmd:CI_RoleCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=67" codeListValue="owner"></gmd:CI_RoleCode></gmd:role>
+                </gmd:CI_ResponsibleParty>               
+            </sml:contact>          
+            <sml:contact>
+                <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName><gco:CharacterString>GENAVIR</gco:CharacterString></gmd:organisationName>
+                    <gmd:role><gmd:CI_RoleCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=67" codeListValue="operator"></gmd:CI_RoleCode></gmd:role>
+                </gmd:CI_ResponsibleParty>               
+            </sml:contact>           
+        </sml:ContactList>        
+    </sml:contacts>
+    
+    <sml:documentation>
+        <sml:DocumentList>
+            <!-- une photo de la plateforme est recommandée ici                                         -->
+            <!-- des documents géré dans des systèmes (librarie) peuvent aussi être référencés,         -->
+            <!-- dans ce cas on utilise des liens href vers ces systèmes                                -->         
+          <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://flotte.ifremer.fr/var/storage/images/medias-ifremer/mediatheque-flotte/flotte/navires/hauturiers/l-atalante/p_atalante.jpg/47908-2-fre-FR/p_atalante.jpg.jpg</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name>
+                        <gco:CharacterString>p_atalante.jpg.jpg</gco:CharacterString>
+                    </gmd:name>
+                    <gmd:description>
+                        <gco:CharacterString>p_atalante.jpg.jpg</gco:CharacterString>
+                    </gmd:description>
+                    <gmd:function><gmd:CI_OnLineFunctionCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=99" codeListValue="quicklook"></gmd:CI_OnLineFunctionCode></gmd:function>
+                </gmd:CI_OnlineResource>
+          </sml:document>        
+        </sml:DocumentList>
+    </sml:documentation>   
+
+    <sml:components>
+        <sml:ComponentList>
+
+
+            <!-- ###############################################################-->
+            <!-- ################### CONTROLLER BOARD description ##############-->
+            <!-- ###############################################################-->
+            <sml:component name="TSG" xlink:href="http://ubisi54.ifremer.fr:8080/sensornanny/record/056cc4aa-d862-42b9-bd83-f537910405af">               
+            </sml:component>
+
+            <sml:component name="CINNA" xlink:href="http://ubisi54.ifremer.fr:8080/sensornanny/record/056cc4aa-d862-42b9-bd83-f537910405af">                
+            </sml:component>
+  
+
+
+        </sml:ComponentList>
+    </sml:components>
+
+</sml:PhysicalSystem>

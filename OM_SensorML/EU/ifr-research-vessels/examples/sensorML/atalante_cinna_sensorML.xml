@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sml:PhysicalSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0"
+    xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.net/sensorML/2.0/sensorML.xsd"
+    gml:id="top">
+
+
+
+
+    <gml:description>integrated navigation system on Atalante (CINNA)</gml:description>
+    <gml:name>integrated navigation system</gml:name>
+
+    <sml:identification>
+
+        <sml:IdentifierList>
+            <!-- #### uuid ##### -->
+            <sml:identifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=66">
+                    <sml:label>uuid</sml:label>
+                    <sml:value>6c6bf0c8-334d-48db-bda5-297b642a097b</sml:value>
+                </sml:Term>
+            </sml:identifier>
+
+        
+
+        </sml:IdentifierList>
+    </sml:identification>
+
+    
+    <!-- Periode pendant laquelle la description la description courante est applicable -->
+    <sml:validTime>
+        <gml:TimePeriod gml:id="validTime">
+            <gml:beginPosition>to be defined</gml:beginPosition>
+            <gml:endPosition>to be defined</gml:endPosition>
+        </gml:TimePeriod>
+    </sml:validTime>
+    <sml:contacts>
+        <sml:ContactList>
+            <sml:contact>
+                <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName><gco:CharacterString>IFREMER</gco:CharacterString></gmd:organisationName>
+                    <gmd:role><gmd:CI_RoleCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=67" codeListValue="owner"></gmd:CI_RoleCode></gmd:role>
+                </gmd:CI_ResponsibleParty>               
+            </sml:contact>
+            <sml:contact>
+                <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName><gco:CharacterString>GENAVIR</gco:CharacterString></gmd:organisationName>
+                    <gmd:role><gmd:CI_RoleCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=67" codeListValue="operator"></gmd:CI_RoleCode></gmd:role>
+                </gmd:CI_ResponsibleParty>               
+            </sml:contact>           
+        </sml:ContactList>        
+    </sml:contacts>
+    <sml:outputs>
+        <sml:OutputList>
+            <sml:output name="systemMeasurement">
+                <swe:DataRecord>
+                    <!-- name contains the name of the netcdf variable in netcdf -->
+                    <swe:field name="surfspeed">                                               
+                        <swe:Quantity definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=113">
+                            <swe:uom/>
+                        </swe:Quantity>                        
+                    </swe:field>
+                    <swe:field name="surfcourse">
+                        <swe:Quantity definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=114">
+                            <swe:uom/>
+                        </swe:Quantity>                        
+                    </swe:field>
+                    <swe:field name="conduct">
+                        <swe:Quantity definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=108">
+                            <swe:uom/>
+                        </swe:Quantity>                        
+                    </swe:field>
+                    <swe:field name="salinity">
+                        <swe:Quantity definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=109">
+                            <swe:uom/>
+                        </swe:Quantity>                        
+                    </swe:field>
+                    <swe:field name="sndspeed">
+                        <swe:Quantity definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=110">
+                            <swe:uom/>
+                        </swe:Quantity>                        
+                    </swe:field>
+                    <swe:field name="density">
+                        <swe:Quantity definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=111">
+                            <swe:uom/>
+                        </swe:Quantity>                        
+                    </swe:field>
+                    <swe:field name="time">
+                        <swe:Time axisID="t" definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=112">
+                            <swe:uom/>
+                        </swe:Time>                        
+                    </swe:field>
+                </swe:DataRecord>                
+            </sml:output>
+        </sml:OutputList>
+    </sml:outputs>
+    
+    <sml:attachedTo xlink:href="http://ubisi54.ifremer.fr:8080/sensornanny/record/2764d202-6814-4fd4-88fb-816325d817a0"/>
+    
+    
+</sml:PhysicalSystem>

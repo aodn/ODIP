@@ -1,0 +1,11 @@
+IFREMER is preparing the management of every earch vessel-bourne observations in SWE standards.
+For description of vessels and intruments some guidelines have been written:
+research_vessel_template.odt	
+
+For V0 vessel description forms a template have been defined:
+sensorFromShip.odt
+
+Example for sensorML are availabe in:
+example/sensorML (vessel, central navigation system and thermosalinograph of Atlante).
+
+example/Om (central navigation system ond thermonsalingraph observations).

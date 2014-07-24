@@ -1,0 +1,10 @@
+VAIMOS is an autonomous sailing boat with embedded instrumentation for ocean surface measurements.
+Information in english: https://www.ensta-bretagne.fr/jaulin/vaimos.html
+On IFREMER web site (in french): http://wwz.ifremer.fr/webtv/Thema/Circulation-oceanique/VAIMOS
+
+A student is preparing sensorML and O&M records from the datasets collected during previous experiences. Eventually the conversion software (C) may be deployed on the control system on-board (ARMADEUS: http://www.armadeus.com/english/index.html) so that observations are directly sent from the platform in SWE standards.
+
+As in previous experiences at sea, one record is generated every 30mn.
+
+Examples of the sensorML and O&M records are given in XML.
+The C routine creates O&M records in JSON.

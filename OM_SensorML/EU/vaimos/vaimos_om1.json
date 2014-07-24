@@ -1,0 +1,52 @@
+["om:OM_Observation",{"xmlns:swe": "http://schemas.opengis.net/sweCommon/2.0/","xmlns:gml": "http://www.opengis.net/gml/3.2","gml:id": "top","xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","xmlns:gco": "http://www.isotc211.org/2005/gco","xmlns:xlink": "http://www.w3.org/1999/xlink","xmlns:om": "http://www.opengis.net/om/2.0","xsi:schemaLocation": "http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd"},
+["gml:description","one time test"],
+["gml:identifier", {"codeSpace": "uuid"},"#c6fad940-5413-4c59-a98d-7ff4855301b4#"],
+["gml:name","kailognav_Wed_Jun_12_14h57min01sec_2013"],["gml:boundedBy", 
+["gml:Envelope", [ "gml:lowerCorner","47.454 -0.587"],
+["gml:upperCorner","47.460 -0.590"]]],
+["om:type",{"xlink:href": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"} ],
+["om:phenomenonTime",    [
+            "gml:TimePeriod",
+            {"gml:id": "temporalExtent"},
+            [
+                "gml:beginPosition",
+                "2013-06-12T14:57:01.0"
+            ],
+            [
+                "gml:endPosition",
+                "2013-06-12T15:13:02.0"
+            ]
+        ]
+    ],
+    [
+        "om:resultTime",
+        [
+            "gml:TimeInstant",
+            {"gml:id": "updateDate"},
+            [
+                "gml:timePosition",
+                "2013-06-12T15:13:02.0"
+            ]
+        ]
+    ],
+    [
+        "om:procedure",
+        {"xlink:href": "http://www.flakey.org/register/process/scales34.xml#platform_number"}
+    ],
+    [
+        "om:observedProperty",
+        {"xlink:href": "http://sweet.jpl.nasa.gov/2.3/propSpaceLocation.owl#Position"}
+    ],
+    [
+        "om:featureOfInterest",
+        {"xlink:href": "http://www.ifremer.fr/tematres/vocab/index.php?tema=98"}
+    ],
+    [
+        "om:result",
+        {
+            "xlink:role": "application/csv-vaimos",
+            "xsi:type": "gml:ReferenceType",
+            "xlink:href": "http://www.ifremer.fr/isi/seadatanet/swe/data/vaimos/kailognav_Wed_Jun_12_14h57min01sec_2013.csv"
+        }
+    ]
+]

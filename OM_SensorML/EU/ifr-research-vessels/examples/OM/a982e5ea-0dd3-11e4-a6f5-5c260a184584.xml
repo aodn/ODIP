@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<om:OM_Observation gml:id="top" 
+    xmlns:om="http://www.opengis.net/om/2.0" 
+    xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:gml="http://www.opengis.net/gml/3.2" 
+    xmlns:swe="http://schemas.opengis.net/sweCommon/2.0/"
+    xsi:schemaLocation="http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd">
+     
+    <!-- thermonsalinometre + CAM_CRNOM + CAM_CAMAN + CAM_NAVIRE -->
+    <gml:description>thermosalinometre TR_TLNMAR, 2013, SUROIT</gml:description>
+    <gml:identifier codeSpace="uuid">a982e5ea-0dd3-11e4-a6f5-5c260a184584</gml:identifier>
+    <!-- thermonsalinometre + CAM_CRNOM -->
+    <gml:name>thermosalinometer TR_TLNMAR</gml:name>
+            
+            <!-- location of the observation, for generic usage -->			
+            <gml:boundedBy>
+                <gml:Envelope>          
+                    <!-- RES_LATSUD, RES_LONWES -->
+                    <gml:lowerCorner>43.027 5.302</gml:lowerCorner>
+                    <!-- RES_LATNOR, RES_LONEST -->
+                    <gml:upperCorner>43.324 5.969</gml:upperCorner>      						
+                </gml:Envelope>				
+            </gml:boundedBy>
+            
+            
+            <!-- always : 	hhttp://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement			 --> 
+            <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>                      
+            
+            <!-- temporal extent which the observation relates to, for trajectory start and stop time value (begin<end) -->
+            <om:phenomenonTime>
+                <gml:TimePeriod gml:id="temporalExtent">
+                    <!-- RES_DATEDEB -->
+                    <gml:beginPosition>2013-02-23</gml:beginPosition>
+                    <!-- RES_DATEFIN -->
+                    <gml:endPosition>2013-02-25</gml:endPosition>
+                </gml:TimePeriod>
+            </om:phenomenonTime>
+            
+            <!-- update time of the observation result -->
+            <!-- time of file on disk -->
+            <om:resultTime>
+                <gml:TimeInstant gml:id="updateDate">
+                    <gml:timePosition>2013-08-26T08:24:41</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>           
+           <!-- research vessel from which acquisition has been done-->          
+           <om:procedure xlink:href="http://ubisi54.ifremer.fr:8080/sensornanny/record/a4452544-847f-47bb-87f7-ce08b4c6296c" />
+                        
+              
+            <!-- can be described in a local resource shared by observations providing for example Temperature and Salinity -->
+            <!-- see for example for weather : http://schemas.opengis.net/om/2.0/examples/swe_weather1.xml					-->
+            <om:observedProperty xlink:href="http://www.ifremer.fr/isi/seadatanet/swe/swe_oceanPhysics.xml"/>
+    
+            
+            
+            <!-- should be on sampling feature 									-->
+            <!-- the sampling feature should have an "intention" attribute		-->
+            <!-- telling which is the domain feature, xlink:href="http://vocab.nerc.ac.uk/collection/L02/current/006/"  			-->	
+            <!-- when observation relates to the observation platform itseklf (navigation, attide, any technical parameters, then "this" is used -->
+            <om:featureOfInterest xlink:href="http://www.ifremer.fr/tematres/vocab/index.php?tema=98" >
+                
+            </om:featureOfInterest>            	                        	                      
+                 
+            
+            <!-- measurements values																	  -->
+            <!-- encoding details depend on the sampling feature 										  -->
+            <!-- for each sampling feature different encoding option are available 						  -->
+            <!-- example out of http://schemas.opengis.net/om/2.0/examples/SWEArrayObservation1.xml       -->
+    <om:result xlink:href="file:///home/sismer_donnees/geosciences/home9/mediterranee/2013020100/201302010045-shipnav-SU_CINNA.nav"
+        xlink:role="application/netcdf" 
+        xsi:type="gml:ReferenceType"></om:result>
+    
+    
+                 
+
+</om:OM_Observation>
+
+
+

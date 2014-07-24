@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<om:OM_Observation gml:id="top" 
+    xmlns:om="http://www.opengis.net/om/2.0" 
+    xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:gml="http://www.opengis.net/gml/3.2" 
+    xmlns:swe="http://schemas.opengis.net/sweCommon/2.0/"
+    xsi:schemaLocation="http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd">
+     
+ 		
+            <gml:description>one time test</gml:description>
+            <gml:identifier codeSpace="uuid">c6fad940-5413-4c59-a98d-7ff4855301b4</gml:identifier>
+            <gml:name>kailognav_Wed_Jun_12_14h57min01sec_2013</gml:name>
+            
+            <!-- location of the observation, for generic usage -->			
+            <gml:boundedBy>
+                <gml:Envelope>
+                    <gml:lowerCorner>47.454 -0.587 </gml:lowerCorner>
+                    <gml:upperCorner>47.460 -0.590</gml:upperCorner>      						
+                </gml:Envelope>				
+            </gml:boundedBy>
+            
+            
+            <!-- always : 	hhttp://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement			 --> 
+            <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>                      
+            
+            <!-- temporal extent which the observation relates to, for trajectory start and stop time value (begin<end) -->
+            <om:phenomenonTime>
+                <gml:TimePeriod gml:id="temporalExtent">
+                    <gml:beginPosition>2013-06-12T14:57:01.0</gml:beginPosition>
+                    <gml:endPosition>2013-06-12T15:13:02.0</gml:endPosition>
+                </gml:TimePeriod>
+            </om:phenomenonTime>
+            
+            <!-- update time of the observation result -->
+            <om:resultTime>
+                <gml:TimeInstant gml:id="updateDate">
+                    <gml:timePosition>2013-06-12T15:13:02.0</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+            
+            <!-- descriptor of acquisition procedure which includes :                                      -->
+            <!-- 	1) the observation system or sensors	(including its configuration or details valid  -->
+            <!--       at the time of the observation				                                       -->
+            <!--    2) the calibration, quality assesment method applied on result                         -->
+            <!--        (different versions of post-processing may be detailed here)                       -->	           
+             <om:procedure xlink:href="http://www.flakey.org/register/process/scales34.xml#platform_number" />
+                        
+              
+            <!-- can be described in a local resource shared by observations providing for example Temperature and Salinity -->
+            <!-- see for example for weather : http://schemas.opengis.net/om/2.0/examples/swe_weather1.xml					-->
+            <om:observedProperty xlink:href="http://sweet.jpl.nasa.gov/2.3/propSpaceLocation.owl#Position"/>
+            
+            
+            <!-- should be on sampling feature 									-->
+            <!-- the sampling feature should have an "intention" attribute		-->
+            <!-- telling which is the domain feature, xlink:href="http://vocab.nerc.ac.uk/collection/L02/current/006/"  			-->	
+            <!-- when observation relates to the observation platform itseklf (navigation, attide, any technical parameters, then "this" is used -->
+            <om:featureOfInterest xlink:href="http://www.ifremer.fr/tematres/vocab/index.php?tema=98" >
+                
+            </om:featureOfInterest>            	                        	                      
+                  
+            
+            <!-- measurements values																	  -->
+            <!-- encoding details depend on the sampling feature 										  -->
+            <!-- for each sampling feature different encoding option are available 						  -->
+            <!-- example out of http://schemas.opengis.net/om/2.0/examples/SWEArrayObservation1.xml       -->
+    <om:result xlink:href="http://www.ifremer.fr/isi/seadatanet/swe/data/vaimos/kailognav_Wed_Jun_12_14h57min01sec_2013.csv"
+        xlink:role="application/csv-vaimos" 
+        xsi:type="gml:ReferenceType"/>
+                 
+
+</om:OM_Observation>
+
+
+
