@@ -1,0 +1,5 @@
+techsas is the acquisition system deployed onboard ifremer research vessel and reseach vessel from some other marine instition in the world (see http://flotte.ifremer.fr/fleet/Presentation-of-the-fleet/On-board-software/TECHSAS).
+
+to ease the data flow (richer, quicker) from sea to data centre, a new version of this acquisition system will implement SWE services for the sea/shore interface.
+
+EUROFLEETS2_Presentation_Acquisition - ODIP.ppt gives an overview of the prototype for the next techsas version as presented for the Eurofleet2 European Union project.
