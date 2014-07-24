@@ -1,0 +1,6 @@
+
+sensor nanny SOS transactional server is a very basic sos server which manages sensorML and o&m records as input or output, in XML or JSON formats.
+
+The code is available on gitHub: https://github.com/ifremer/sosServer
+
+An instance should available from July 29th on at: http://www.ifremer.fr/sensornanny/
