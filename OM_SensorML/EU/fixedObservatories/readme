@@ -1,0 +1,15 @@
+One short term objectifs to be able to manage fixed observatories descriptions in SWE standards.
+The targeted platforms are:
+
+- POSEIDON moorings (http://www.poseidon.hcmr.gr/eurosites/about.php) : in JERICO projects the description of POSEIDON moorings is being translated in sensorML (with IFREMER/MARUM/HCMR). For SeaDataNet a user friendly web editor will be developed.
+An example of a formal description of M3A mooring (to be implemented in sensorML) is given in spreadsheet format:
+poseidon-m3a-sensorML-example.ods
+
+the format is documented in details in:
+jerico-observatory-mooring-description.odt
+
+- MOMAR seabed observatories (in french: http://www.ifremer.fr/momarsat2010/instr_obsmomar.htm): for FIXO3 project, the platform/intruments description in sensorML is prepared. The observations themselves will also be managed as O&M records.
+
+
+
+
