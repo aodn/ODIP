@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sml1:SensorML xmlns:sml="http://www.opengis.net/sensorML/1.0.1" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:icism="urn:us:gov:ic:ism:v2" xmlns:sml1="http://www.opengis.net/sensorML/1.0" xmlns:swe1="http://www.opengis.net/swe/1.0" xmlns:ns8="http://www.opengis.net/gml/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://www.opengis.net/sensorML/1.0 http://schemas.opengis.net/sensorML/1.0.0/sensorML.xsd">
+    <sml1:member>        
+        <sml1:System>
+            <!-- ##### TITLE from deployment file ######## -->
+            <gml:description>PROVOR ARVOR  - 1000 dbar</gml:description>
+            <gml:name>PROVOR ARVOR  - 1000 dbar</gml:name>                        
+            <sml1:identification>
+                <sml1:IdentifierList>
+                    <!-- #### WMO PLATFORM NUMBER ##### -->
+                    <sml1:identifier name="platformNumber">
+                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=47">
+                            <sml1:value>69000</sml1:value>
+                        </sml1:Term>
+                    </sml1:identifier>
+                    <!-- #### WMO PLATFORM TYPE ##### -->
+                    <sml1:identifier name="platformType">
+                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=50">
+                            <sml1:codeSpace xlink:href="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=36"/>
+                            <sml1:value>PROVOR</sml1:value>
+                        </sml1:Term>
+                    </sml1:identifier> 
+                    <!-- from deployment file -->
+                    <sml1:identifier name="serialNumber">
+                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=48">
+                            <sml1:value>OIN-99-02-003</sml1:value>
+                        </sml1:Term>
+                    </sml1:identifier>
+                    <!-- ###### PLATFORM_MAKER ######## -->
+                    <sml1:identifier name="manufacturer">
+                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=52">
+                            <sml1:codeSpace xlink:href="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=40"/>
+                            <sml1:value>Optimare</sml1:value>
+                        </sml1:Term>
+                    </sml1:identifier>                                
+                </sml1:IdentifierList>
+            </sml1:identification>
+            <sml1:classification>
+                <sml1:ClassifierList>
+                    <!-- #### PLATFORM_FAMILY ############### -->
+                    <sml1:classifier name="family">
+                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=51">
+                            <sml1:codeSpace xlink:href="http://vocab.nerc.ac.uk/collection/L06/current/"/>
+                            <sml1:value>drifting subsurface profiling float</sml1:value>
+                        </sml1:Term>
+                    </sml1:classifier>                 
+                </sml1:ClassifierList>
+            </sml1:classification>
+            <!-- Periode pendant laquelle la description la description courante est applicable -->
+            <sml1:validTime>
+                <gml:TimePeriod>
+                    <gml:beginPosition>1999-09-06T00:00:00.0</gml:beginPosition>
+                    <gml:endPosition>2007-09-14T00:00:00.0</gml:endPosition>
+                </gml:TimePeriod>
+            </sml1:validTime>
+            <sml1:contact xlink:arcrole="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=53">
+                <sml1:ResponsibleParty>
+                    <!--###### argo metadata -> PI_NAME ####-->
+                    <sml1:individualName>Gerd ROHARDT</sml1:individualName>
+                    <!--###### argo metadata -> PROJECT_NAME ####-->
+                    <sml1:organizationName>AWI</sml1:organizationName>
+                </sml1:ResponsibleParty> 
+            </sml1:contact>          
+            <sml1:documentation>
+                <sml1:Document gml:id="platformResources">
+                    <!-- une photo du profileur ce serait sympa ici -->
+                    <gml:description>platform online resources</gml:description>                   
+                    <sml1:onlineResource xlink:href="http://tds0.ifremer.fr/thredds/catalog/CORIOLIS-ARGO-GDAC-OBS/coriolis/69000/catalog.html?dataset=CORIOLIS-ARGO-GDAC-OBS/coriolis/69000"/>
+                    <sml1:onlineResource xlink:href="http://www.ifremer.fr/co-argoFloats/float?detail=true&gt;ptfCode=69000&gt;lang=en"/>                                        
+                    
+                    <!-- pourquoi pas, toutefois dans le SWE (protocol SOS), j'imagine que les données doivent plutôt 
+                        être référencées dans le format O&M --> 
+                    <sml1:onlineResource xlink:href="ftp://ftp.ifremer.fr/ifremer/argo/dac/coriolis/69000/69000_prof.nc"/>
+                    <sml1:onlineResource xlink:href="ftp://ftp.ifremer.fr/ifremer/argo/dac/coriolis/69000/69000_traj.nc"/>
+                    <sml1:onlineResource xlink:href="ftp://ftp.ifremer.fr/ifremer/argo/dac/coriolis/69000/69000_meta.nc"/>
+                    <sml1:onlineResource xlink:href="ftp://ftp.ifremer.fr/ifremer/argo/dac/coriolis/69000/69000_tech.nc"/>
+                </sml1:Document> 
+            </sml1:documentation>     
+            <sml1:history>
+                <sml1:EventList>
+                    <sml1:member name="deployment">
+                        <sml1:Event>
+                            <!-- ###### LAUNCH_DATE ######## -->
+                            <sml1:date>1999-09-06T00:00:00.0</sml1:date>
+                            <sml1:property name="location">
+                              <swe1:Position>
+                                  <!-- ###### Position du déploiement toujours en WGS84 ######## -->                                 
+                                  <swe1:location>                                      
+                                      <swe1:Vector>                                         
+                                          <swe1:coordinate name="longitude">                                              
+                                              <swe1:Quantity>
+                                                  <swe1:uom code="degree"/>
+                                                  <!-- ###### LAUNCH_LONGITUDE ################ -->
+                                                  <swe1:value>0.0267</swe1:value>
+                                              </swe1:Quantity>
+                                          </swe1:coordinate>
+                                          <swe1:coordinate name="latitude">
+                                              <swe1:Quantity>
+                                                  <swe1:uom code="degree"/>
+                                                  <!-- ############# LAUNCH_LATIITUDE ############ --> 
+                                                  <swe1:value>49.4852</swe1:value>
+                                              </swe1:Quantity>
+                                          </swe1:coordinate>     
+                                      </swe1:Vector>                                      
+                                  </swe1:location>
+                              </swe1:Position>                                
+                            </sml1:property>
+                        </sml1:Event>
+                    </sml1:member>
+                </sml1:EventList>
+                
+            </sml1:history>
+           
+           
+            
+            <!-- vue la definition de ces concepts input/output dans sensorML, 
+            je ne pense pas qu'il est utile de décrire cela au niveau du flotteur (pour l'instant) -->
+            <!-- input/output according of OGC/sensorml :
+            Any given sensor will include one or more detectors which convert input phenomenon to
+            an output phenomenon or digital values. A simple detector can typically be defined as a
+            ProcessModel in which its parameters define the response characteristics of the detector.
+            The response model, and thus the parameters, may be as simple as a linear steady state
+            response (e.g., calibration) curve, or may include a host of parameters such as non-linear
+            steady state response, latency time, integration time, accuracy, impulse response, and
+            frequency response.
+            This document defines a recommended (i.e., non-normative) encoding for transducers
+            that should be suitable as a Component for a large number of detectors and actuators. It is
+            restricted to one scalar input and one scalar output and uses the parameters listed above to
+            define the transducer response. More complex transducer arrays are supported by using a
+            System to wrap a Detector or Actuator description and by tweaking each response
+            parameter using an index mechanism. It is to the advantage of the sensor community,
+            that a general response model be developed that is common for a wide range of sensors.
+            This would serve not only as a common response model for most transducer devices, but
+            would also serve as a common base that one can extend to meet specific needs.
+            
+            -->
+      
+            <!-- on peut essayer de conserver l'output car ça informe sur la 'sortie' du système décrit -->
+            <!-- strictement on descend à un niveau aussi haut (après autant de traitement) ça veut dire que dans le système,-->
+            <!--    on décrit aussi, parmi les components, le processeur qui traite les données en aval des capteur du flotteur -->
+            <!-- on pourrait aussi choisir de decrire ici les trames envoyée par les flotteurs --> 
+            <sml1:outputs>                
+                <sml1:OutputList>                                      
+                    <sml1:output name="systemMeasurements">
+<swe1:Curve>
+    <swe1:elementCount></swe1:elementCount>
+    <swe1:elementType>
+        <swe1:SimpleDataRecord>
+            <!-- ### @name of the parameter as in netcdf data file #### -->
+            <swe1:field name="PSAL">
+                <!-- ### @definition reference of the measured quantity in a vocabulary server, as much as possible P02 ###-->
+                <swe1:Quantity definition="http://vocab.nerc.ac.uk/collection/P02/current/PSAL">
+                    <!-- ### @xlink:href reference of the unit of measure, as much as possible in http://qudt.org/vocab/unit ###-->
+                    <!-- ### @code label for the unit ###-->
+                    <swe1:uom xlink:href="http://qudt.org/vocab/unit#Milli" code="psu"/>
+                </swe1:Quantity>      
+            </swe1:field>
+            <swe1:field name="TEMP">
+                <swe1:Quantity definition="http://vocab.nerc.ac.uk/collection/P02/current/TEMP">
+                    <swe1:uom   xlink:href="http://qudt.org/vocab/unit#DegreeCelsius" code="Deg_C"/>
+                </swe1:Quantity>      
+            </swe1:field>
+            <swe1:field name="PRES">
+                <swe1:Quantity definition="http://qudt.org/vocab/quantity#Pressure">
+                    <swe1:uom code="deciBar"/>                                                                                           
+                </swe1:Quantity>  
+                </swe1:field>
+                <swe1:field name="TIME">
+                    <swe1:Quantity definition="http://qudt.org/vocab/quantity#Time">
+                        <swe1:uom xlink:href="http://qudt.org/vocab/unit#SecondTime" code="seconds"/>
+                    </swe1:Quantity>
+            </swe1:field>
+        </swe1:SimpleDataRecord>
+    </swe1:elementType>
+</swe1:Curve>                                                     
+                    </sml1:output>
+                </sml1:OutputList>
+            </sml1:outputs>
+            <!-- ici on peut mettre la liste des capteurs embarqués, si possible chaque capteur peut-être -->
+            <!-- lié "href" à sa description en sensorML aussi -->
+            <sml1:components>
+                <sml1:ComponentList>
+                    <!-- ###############################################################-->
+                    <!-- ################### BATTERY description #######################-->
+                    <!-- ###############################################################-->
+                    <sml1:component name="battery">
+                        <sml1:Component> 
+                            <sml1:identification>
+                                <sml1:IdentifierList>
+                                    <!-- ##### BATTERY_TYPE ####-->
+                                    <sml1:identifier name="type">
+                                        <!-- @definition an URN/URL to the type of identifier  -->                                    
+                                        <sml1:Term  definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=50">
+                                            <!-- @codeSpace contains an URL to list of accepted terms, if open list no codespace  -->       
+                                            <sml1:codeSpace xlink:href="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=15"/>
+                                            <!-- value contain a label for the term -->
+                                            <sml1:value>alkaline</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                </sml1:IdentifierList>
+                                
+                            </sml1:identification>                                                    
+                        </sml1:Component>
+                    </sml1:component>
+                    <!-- ###############################################################-->
+                    <!-- ################### CONTROLLER BOARD description ##############-->
+                    <!-- ###############################################################-->
+                    <sml1:component name="controllerBoard">
+                        <sml1:Component>
+                            <sml1:identification>
+                                <sml1:IdentifierList> 
+                                    <!-- ##### CONTROLLER_BOARD_SERIAL_NO_PRIMARY ####-->
+                                    <sml1:identifier name="serialNumber">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=48">                                            
+                                            <sml1:value>4567</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                    <!-- ##### CONTROLLER_BOARD_TYPE_PRIMARY ####-->
+                                    <sml1:identifier name="type">
+                                        <!-- local reference list to be defined -->
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=50">
+                                            <sml1:codeSpace xlink:href="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=21"/>
+                                            <sml1:value>APF9</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                </sml1:IdentifierList>                                
+                            </sml1:identification>                                                       
+                        </sml1:Component>
+                    </sml1:component>
+                    <!-- ###############################################################-->
+                    <!-- ################### FIRMWARE version ##########################-->
+                    <!-- ###############################################################-->
+                    <sml1:component name="firmware">
+                        <sml1:Component>
+                            <sml1:identification>
+                                <sml1:IdentifierList>
+                                    <!-- #### FIRMWARE_VERSION #####-->
+                                    <sml1:identifier name="version">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=55">
+                                            <sml1:codeSpace xlink:href="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=24"/>
+                                            <sml1:value>042606</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>                                  
+                                </sml1:IdentifierList>                                
+                            </sml1:identification>
+                        </sml1:Component>                        
+                    </sml1:component>
+                    <sml1:component name="positioningSystem">
+                        <sml1:Component>
+                            <sml1:identification>
+                                <sml1:IdentifierList>
+                                    <!-- ##### POSITIONING_SYSTEM #####-->
+                                    <sml1:identifier name="type">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=50">
+                                            <sml1:codeSpace xlink:href="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=26"/>
+                                            <sml1:value>ARGOS</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                </sml1:IdentifierList>
+                                
+                            </sml1:identification>
+                        </sml1:Component>
+                    </sml1:component>
+                    <sml1:component name="transmissionSystem">
+                        <sml1:Component>
+                            <sml1:identification>
+                                <sml1:IdentifierList>
+                                    <!-- ##### TRANS_SYSTEM #####-->
+                                    <sml1:identifier name="type">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=50">
+                                            <sml1:codeSpace xlink:href="ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=30" />
+                                            <sml1:value>ARGOS</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                    <!-- ##### TRANS_SYSTEM_ID #####-->
+                                    <sml1:identifier name="id">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=48">                                            
+                                           <sml1:value>14281</sml1:value> 
+                                        </sml1:Term>
+                                    </sml1:identifier>                                  
+                                    <!-- #### PTT ###-->
+                                    <sml1:identifier name="ptt">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=56">                                            
+                                            <sml1:value>23978</sml1:value> 
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                    <!-- #### argos Program from deployment file #### --> 
+                                    <sml1:identifier name="argosProgram">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=57">
+                                            <sml1:codeSpace xlink:href="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=43"/>
+                                            <sml1:value>3896</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                </sml1:IdentifierList>                                
+                            </sml1:identification>
+                        </sml1:Component>
+                    </sml1:component>
+                    <sml1:component name="sensor">
+                        <sml1:Component>
+                            <sml1:identification>
+                                <sml1:IdentifierList>    
+                                        <!-- ### SENSOR_MAKER ### -->
+                                        <sml1:identifier name="manufacturer">
+                                            <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=52">
+                                            <sml1:codeSpace xlink:href="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=40"/>   
+                                            <sml1:value>SEABIRD</sml1:value>
+                                        </sml1:Term>
+                                        </sml1:identifier>
+                                    <!-- ### SENSOR_MODEL ### -->
+                                    <sml1:identifier name="model">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=49">                                                  
+                                            <sml1:value>SBE41</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                    <!-- #### SENSOR_SERIAL_NO ###-->
+                                    <sml1:identifier name="serialNumber">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=48">                                                  
+                                            <sml1:value>6785</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                </sml1:IdentifierList>
+                                
+                            </sml1:identification>
+                            <sml1:inputs>
+                                <sml1:InputList>
+                                    <!-- #### @name = SENSOR ### -->
+                                    <sml1:input name="TEMP">
+                                        <!-- ### @definition from P02 as much as possible ### -->
+                                        <swe1:ObservableProperty gml:id="TEMP" definition="http://vocab.nerc.ac.uk/collection/P02/current/TEMP/"/>
+                                    </sml1:input>
+                                </sml1:InputList>                                
+                            </sml1:inputs>                                                                                    
+                            <sml1:outputs>
+                                
+                                <sml1:OutputList>
+                                    <!-- #### @name as in netcdf data file #### -->
+                                    <sml1:output name="TEMP">
+                                        <swe1:Quantity>
+                                            <!-- ### @xlink:href as much as possible on an external reference ### -->
+                                            <!-- ### @code as in SENSOR_UNITS                                 ### --> 
+                                            <swe1:uom xlink:href="http://qudt.org/vocab/unit#DegreeCelsius" code="deg_C"/>                                                                                             
+                                        </swe1:Quantity>                                                                                            
+                                    </sml1:output>
+                                </sml1:OutputList>
+                                
+                            </sml1:outputs>
+                            <sml1:method>
+                                <sml1:ProcessMethod>
+                                    <sml1:rules>                                        
+                                        <sml1:RulesDefinition>
+                                            <!-- ##### PREDEPLOYMENT_CALIB_COEFFICIENT #### -->
+                                            <gml:description>ser# = 3016 temperature coeffs: A0 =  -0.0000 A1 =   0.0003 A2 =  -0.0000 A3 =   0.0000</gml:description>
+                                        </sml1:RulesDefinition>
+                                    </sml1:rules>                                  
+                                    <sml1:algorithm>                                        
+                                        <sml1:AlgorithmDefinition>
+                                            <!-- ##### PREDEPLOYMENT_CALIB_EQUATION #### -->
+                                            <gml:description>Temperature ITS-90 = 1/ { a0 + a1[lambda nu (n)] + a2 [lambda nu^2 (n)] + a3 [lambda nu^3 (n)]} - 273.15 (deg C)</gml:description>                                            
+                                        </sml1:AlgorithmDefinition>                                        
+                                    </sml1:algorithm>
+                                    
+                                </sml1:ProcessMethod>
+                                
+                            </sml1:method>
+                        </sml1:Component>                                               
+                    </sml1:component>     
+                    <sml1:component name="sensor">
+                        <sml1:Component>
+                            <sml1:identification>
+                                <sml1:IdentifierList>                                    
+                                    <sml1:identifier name="manufacturer">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=52">
+                                            <sml1:codeSpace xlink:href="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=40"/>
+                                            <sml1:value>SEABIRD</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                    <sml1:identifier name="model">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=49">                                                  
+                                            <sml1:value>SBE41</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                    <sml1:identifier name="serialNumber">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=48">                                                  
+                                            <sml1:value>6785</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                </sml1:IdentifierList>
+                                
+                            </sml1:identification>
+                            <sml1:inputs>
+                                <sml1:InputList>
+                                    <sml1:input name="conductivity">
+                                        <swe1:ObservableProperty gml:id="conductivity" definition="http://vocab.nerc.ac.uk/collection/P02/current/CNDC/"/>
+                                    </sml1:input>
+                                </sml1:InputList>                                
+                            </sml1:inputs>                                                                                    
+                            <sml1:outputs>
+                                
+                                <sml1:OutputList>
+                                    <sml1:output name="PSAL">
+                                        <swe1:Quantity>
+                                            <swe1:uom xlink:href="http://qudt.org/vocab/unit#Milli" code="psu"/>                                                                                             
+                                        </swe1:Quantity>                                                                                            
+                                    </sml1:output>
+                                </sml1:OutputList>
+                                
+                            </sml1:outputs>
+                            <sml1:method>
+                                <sml1:ProcessMethod>
+                                    <sml1:rules>                                        
+                                        <sml1:RulesDefinition>
+                                            <gml:description><!-- example missing --></gml:description>
+                                        </sml1:RulesDefinition>
+                                    </sml1:rules>                                  
+                                    <sml1:algorithm>                                        
+                                        <sml1:AlgorithmDefinition>
+                                            <gml:description><!-- example missing --></gml:description>                                            
+                                        </sml1:AlgorithmDefinition>                                        
+                                    </sml1:algorithm>                                    
+                                </sml1:ProcessMethod>                                
+                            </sml1:method>
+                        </sml1:Component>                                               
+                    </sml1:component>    
+                    <sml1:component name="sensor">
+                        <sml1:Component>
+                            <sml1:identification>
+                                <sml1:IdentifierList>                                    
+                                    <sml1:identifier name="manufacturer">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=52">                                                  
+                                            <sml1:value>SEABIRD</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                    <sml1:identifier name="model">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=49">                                                  
+                                            <sml1:value>SBE41</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                    <sml1:identifier name="serialNumber">
+                                        <sml1:Term definition="http://ubisi54.ifremer.fr/tematres/vocab/xml.php?skosTema=48">                                                  
+                                            <sml1:value>6785</sml1:value>
+                                        </sml1:Term>
+                                    </sml1:identifier>
+                                </sml1:IdentifierList>
+                                
+                            </sml1:identification>
+                            <sml1:inputs>
+                                <sml1:InputList>
+                                    <sml1:input name="pressure">
+                                        <swe1:ObservableProperty gml:id="pressure" definition="http://vocab.nerc.ac.uk/collection/P09/current/PRES/"/>
+                                    </sml1:input>
+                                </sml1:InputList>                                
+                            </sml1:inputs>                                                                                    
+                            <sml1:outputs>                                
+                                <sml1:OutputList>
+                                    <sml1:output name="PRES">
+                                        <swe1:Quantity>
+                                            <swe1:uom xlink:href="http://vocab.nerc.ac.uk/collection/P24/current/POWAREA/" code="deciBar"/>                                                                                             
+                                        </swe1:Quantity>                                                                                            
+                                    </sml1:output>
+                                </sml1:OutputList>                                
+                            </sml1:outputs>
+                            <sml1:method>
+                                <sml1:ProcessMethod>
+                                    <sml1:rules>                                        
+                                        <sml1:RulesDefinition>
+                                            <gml:description><!-- example missing --></gml:description>
+                                        </sml1:RulesDefinition>
+                                    </sml1:rules>                                  
+                                    <sml1:algorithm>                                        
+                                        <sml1:AlgorithmDefinition>
+                                            <gml:description><!-- example missing --></gml:description>                                            
+                                        </sml1:AlgorithmDefinition>                                        
+                                    </sml1:algorithm>                                    
+                                </sml1:ProcessMethod>                                
+                            </sml1:method>
+                        </sml1:Component>                                               
+                    </sml1:component>   
+                </sml1:ComponentList>
+            </sml1:components>         
+        </sml1:System>
+    </sml1:member>
+</sml1:SensorML>
