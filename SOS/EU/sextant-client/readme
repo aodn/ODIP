@@ -1,0 +1,6 @@
+Sextant is the IFREMER Spatial Data Infrastructure used for discovery, view and download of marine datasets for European (MyOcean,edmonet,seadatanet) and national projects.
+
+In the web portal, a SOS client has been implemented since 2010. It is described in the slides:
+Sextant_IMDIS_2010.pptx
+
+It will be re-designed to manage recent version of SOS services (2.0).
